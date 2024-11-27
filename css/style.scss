@@ -1,0 +1,793 @@
+@charset "UTF-8";
+/***変数***/
+$light_green: #657999;
+$red: #C9145A;
+$blue: #0071B1;
+$green: #B11353;
+
+
+/***変数ここまで***/
+
+
+/***共通ここから***/
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: #333;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.sp {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+.inner {
+    width: 90%;
+    margin: auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+.white {
+    color: #fff;
+}
+
+/***共通ここまで***/
+
+/***コンテンツここから***/
+header {
+    background: #fff;
+
+    h1 {
+        padding: 1rem;
+        width: 30%;
+    }
+}
+
+#wrapper {
+    background: $light_green;
+}
+
+.bg {
+    background-image: url(../images/flower_right.png), url(../images/flower_right.png), url(../images/flower_left.png);
+    background-size: 40%, 40%, 40%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right top 43%, right bottom 20%, left bottom;
+
+
+}
+
+// #top {
+//     background-image: url(../images/bg_sp.webp);
+//     background-position: center center;
+//     background-size: cover;
+//     position: relative;
+
+//     h2 {
+//         width: 90%;
+//         margin: auto;
+//         padding: 5rem 0;
+//     }
+
+//     h3 {
+//         position: absolute;
+//         right: 1rem;
+//         bottom: -12%;
+//         width: 23%;
+
+//         a {
+//             transition: all .3s;
+//             position: relative;
+
+//             &:hover {
+//                 top: 3px;
+//             }
+//         }
+//     }
+// }
+
+#top {
+    position: relative;
+    h3 {
+        position: absolute;
+        right: 1rem;
+        bottom: -15%;
+        width: 23%;
+
+        a {
+            transition: all .3s;
+            position: relative;
+
+            &:hover {
+                top: 3px;
+            }
+        }
+    }
+}
+
+
+#prize {
+    padding: 3rem 0 4rem;
+
+    h2 {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+
+        span {
+            text-emphasis: filled dot $red;
+            font-weight: 400;
+        }
+
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    .best {
+        background: #fff;
+        padding: 3rem 2rem 3rem;
+        box-shadow: 0px 3px 6px 0px rgba($color: #000000, $alpha: 0.1);
+        position: relative;
+        margin-bottom: 2rem;
+
+        .badge01 {
+            position: absolute;
+            top: -3%;
+            right: 2%;
+            width: 8rem;
+        }
+
+        h2 {
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 1px;
+                height: 40px;
+                background-color: #333333;
+            }
+
+            &::before {
+                margin-right: 30px;
+                transform: rotate(-25deg)
+            }
+
+            &::after {
+                margin-left: 30px;
+                transform: rotate(25deg)
+            }
+        }
+
+    }
+
+    .best_all {
+        &__li {
+            border-bottom: solid 0.1rem #DCE2E1;
+            padding: 2rem 0;
+        }
+    }
+
+    .best_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h5 {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 1.5;
+            padding-bottom: 1rem;
+        }
+
+        h6 {
+            text-align: center;
+            color: $red;
+            font-size: 1.4rem;
+            font-weight: bold;
+
+            span {
+                font-size: 3.5rem;
+                font-weight: bold;
+                padding-right: 0.5rem;
+            }
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 2rem 0 0;
+
+            a {
+                color: $blue;
+            }
+        }
+        &__text-s{
+            padding-top: 1rem;
+            font-size: 1rem;
+            padding-left: 30%;
+            a {
+                color: $blue;
+            }
+        }
+
+    }
+
+    .plus {
+        padding: 2rem 0 0;
+        text-align: center;
+
+        &__01 {
+            color: $red;
+            font-weight: bold;
+            font-size: 5rem;
+            padding-bottom: 2rem;
+        }
+
+        &__02 {
+            font-weight: bold;
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+        }
+
+        a {
+            color: $blue;
+        }
+    }
+
+    .second {
+        background: #fff;
+        padding: 3rem 2rem 3rem;
+        box-shadow: 0px 3px 6px 0px rgba($color: #000000, $alpha: 0.1);
+        position: relative;
+        margin-bottom: 2rem;
+
+        h2 {
+            width: 40%;
+            margin: auto;
+            padding-bottom: 3rem;
+        }
+
+        figure {
+            width: 50%;
+            margin: auto;
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 0;
+        }
+
+        .badge02 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            width: 8rem;
+        }
+    }
+
+    .amazon {
+        font-size: 1.2rem;
+
+        li {
+            padding-bottom: 0.5rem;
+            line-height: 1.5;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+}
+
+#application {
+    padding: 4rem 0;
+    position: relative;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 7rem;
+    }
+
+    @mixin step {
+        background: #fff;
+        padding: 5rem 2rem 3rem;
+        box-shadow: 0px 3px 6px 0px rgba($color: #000000, $alpha: 0.1);
+        position: relative;
+        margin-bottom: 2rem;
+
+        h4 {
+            font-size: 1.8rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        figure {
+            width: 80%;
+            margin: auto;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .number {
+            position: absolute;
+            width: 3rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -10%;
+        }
+
+        margin-bottom: 7rem;
+    }
+
+    .step01 {
+        @include step;
+
+        figure {
+            padding-bottom: 2rem;
+        }
+
+    }
+
+    .step02 {
+        @include step;
+
+        figure {
+            width: 100%;
+        }
+
+        .number {
+            width: 4rem;
+            top: -8%;
+        }
+    }
+
+    .step03 {
+        @include step;
+
+        figure {
+            width: 100%;
+        }
+
+        .number {
+            width: 4rem;
+            top: -8%;
+        }
+
+        margin-bottom: 0;
+    }
+
+}
+
+#works {
+    padding: 4rem 0 1rem;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        color: #fff;
+        padding-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        &::before,
+        &::after {
+            content: '';
+            flex-grow: 1;
+            border-bottom: 1px solid #fff;
+        }
+
+        &::before {
+            margin-right: 20px;
+        }
+
+        &::after {
+            margin-left: 20px;
+        }
+    }
+
+    ul {
+        padding-bottom: 3rem;
+
+        li {
+            font-size: 1.4rem;
+            padding-bottom: 1.5rem;
+
+            a {
+                color: #fff;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+}
+
+#result {
+    padding: 4rem 0;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2;
+        padding-bottom: 2rem;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        img {
+            width: 5rem;
+        }
+
+    }
+
+
+}
+
+#attention {
+    padding: 4rem 0 7rem;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    ol {
+        padding-left: 1em;
+
+        li {
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+            line-height: 1.5;
+
+        }
+    }
+}
+
+footer {
+    background: #1B1464;
+    color: #fff;
+    padding: 4rem 0;
+
+    .sns {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    nav {
+        margin-bottom: 3rem;
+
+        ul {
+            text-align: center;
+
+            li {
+                font-size: 1.4rem;
+                padding-bottom: 2rem;
+
+                a {
+                    transition: 0.3s;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            &:first-of-type {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+
+#dl_btn {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem, ;
+    width: 40%;
+    z-index: 1;
+
+}
+
+
+#page_top {
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+#page_top a::before {
+    font-family: FontAwesome;
+    content: '\f077';
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/***ハンバーガーここから***/
+ハンバーガー #navBtn {
+    position: fixed;
+    z-index: 1000;
+}
+
+.cp_hmenuac03 .cp_bar,
+.cp_hmenuac03:before,
+.cp_hmenuac03:after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    content: '';
+    transition: all 0.2s ease-in-out;
+    background: #1B1464;
+}
+
+.cp_hmenuac03 .cp_bar {
+    position: relative;
+    margin: 7px 0;
+}
+
+.cp_hmenuac03 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 100;
+}
+
+#navMenu {
+    height: 0;
+}
+
+#navMenu nav {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+#navMenu.show nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: $light_green;
+    background-image: url(../images/flower_right.png), url(../images/flower_left.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, 40%;
+    background-position: left top, right bottom;
+    z-index: 99;
+    transition: 0.2s;
+}
+
+#navMenu.show nav ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: #1B1464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navMenu nav ul {
+    display: none;
+}
+
+#navMenu nav ul li {
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: #fff;
+
+    &:last-of-type {
+        padding-top: 1rem;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+#navMenu nav ul li:last-of-type {
+    border: 0;
+}
+
+#navMenu nav ul li a {
+    color: inherit;
+    display: block;
+    transition: 0.3s;
+}
+
+#navMenu nav ul li a:hover {
+    // color: #fff;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.show .cp_hmenuac03 .cp_bar {
+    transform: scale(0);
+}
+
+.show .cp_hmenuac03:before {
+    transform: translateY(10px) rotate(135deg);
+    background-color: #fff;
+}
+
+.show .cp_hmenuac03:after {
+    transform: translateY(-8px) rotate(-135deg);
+    background-color: #fff;
+}
+
+
+/***ハンバーガーここまで***/
+/***dlボタンここから***/
+#dl_sp {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 970;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-duration: .3s;
+    transform: translate(0, 100px);
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        list-style-type: none;
+        padding: 1rem 0;
+
+        li {
+            width: 44%;
+
+            &:last-of-type {
+                width: 54%;
+            }
+        }
+    }
+    &.is-scrollIn{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/***dlボタンここまで***/
+
+/***コンテンツここまで***/
+
+@media (min-width: 480px) {
+    html {
+        font-size: 68.75%;
+    }
+
+}
+
+@media (min-width: 640px) {
+    html {
+        // #タブレットとxperia表示のために変更
+        // font-size: 75%;
+        font-size: 100%;
+    }
+}
+
+
+@media (min-width: 980px) {
+    @import 'pc';
+
+}
